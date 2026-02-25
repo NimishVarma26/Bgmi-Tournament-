@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================
+       META & DOCUMENT SETUP
+       ============================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact BGMI Pro League — Register your squad, ask questions, or get in touch with the tournament organizers." />
+  <title>BGMI Pro League | Contact Us</title>
+
+  <!-- Link to this page's dedicated CSS file -->
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION BAR
+       "active" class updated for Contact page
+       ============================================ -->
+  <nav aria-label="Main navigation">
+    <div class="nav-container">
+
+      <!-- Brand / Logo -->
+      <a href="index.html" class="nav-logo">BGMI<span>PRO</span></a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- END: Navigation -->
+
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main>
+
+    <!-- ==========================================
+         PAGE HERO BANNER
+         Title banner for the Contact page
+         ========================================== -->
+    <section class="page-hero" aria-label="Contact page banner">
+      <div class="page-hero-inner">
+        <span class="page-tag">&#9670; Get In Touch</span>
+        <h1 class="page-title">
+          Contact <span class="accent">Us</span>
+        </h1>
+        <p class="page-subtitle">
+          Have a question? Ready to register? Facing an issue?
+          Our team is available 7 days a week. Drop us a message
+          and we'll respond within 24 hours.
+        </p>
+      </div>
+    </section>
+    <!-- END: Page Hero -->
+
+
+    <!-- ==========================================
+         CONTACT MAIN SECTION
+         Left: info panel | Right: contact form
+         ========================================== -->
+    <section class="section-contact" aria-labelledby="contact-heading">
+
+      <div class="contact-wrapper">
+
+        <!-- ----------------------------------------
+             LEFT: Contact Information Panel
+             Shows address, email, phone, social links
+             ---------------------------------------- -->
+        <aside class="contact-info" aria-label="Contact information">
+
+          <p class="info-label">&#9654; Reach Us Directly</p>
+
+          <h2 class="info-title" id="contact-heading">
+            Let's <span class="accent">Talk</span>
+          </h2>
+
+          <div class="info-divider" aria-hidden="true"></div>
+
+          <p class="info-desc">
+            Whether you're registering a squad, disputing a match result,
+            or looking for a sponsorship opportunity — we're here to help.
+            Fill out the form or reach us on any of the channels below.
+          </p>
+
+          <!-- Contact info items -->
+          <div class="info-items">
+
+            <!-- Email -->
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true">📧</span>
+              <div>
+                <p class="item-label">Email</p>
+                <p class="item-value">support@bgmiproleague.in</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true">📞</span>
+              <div>
+                <p class="item-label">Phone / WhatsApp</p>
+                <p class="item-value">+91 98765 43210</p>
+              </div>
+            </div>
+
+            <!-- Discord -->
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true">💬</span>
+              <div>
+                <p class="item-label">Discord</p>
+                <p class="item-value">discord.gg/bgmiproleague</p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true">📍</span>
+              <div>
+                <p class="item-label">Location</p>
+                <p class="item-value">New Delhi, India 🇮🇳</p>
+              </div>
+            </div>
+
+            <!-- Support Hours -->
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true">🕐</span>
+              <div>
+                <p class="item-label">Support Hours</p>
+                <p class="item-value">Mon–Sun · 9 AM – 10 PM IST</p>
+              </div>
+            </div>
+
+          </div><!-- end .info-items -->
+
+        </aside>
+        <!-- END: Contact Info Panel -->
+
+
+        <!-- ----------------------------------------
+             RIGHT: Contact Form
+             Fields: Name, Email, Phone, Subject, Message
+             No backend — action="#" (dummy submit)
+             ---------------------------------------- -->
+        <div class="contact-form-wrap">
+
+          <h2 class="form-title">Send Us A Message</h2>
+          <p class="form-subtitle">Fields marked <span style="color: var(--neon-orange);">*</span> are required</p>
+
+          <!-- FORM START — no backend, action="#" -->
+          <form action="#" method="post" novalidate aria-label="Contact form">
+
+            <!-- Row 1: Name + Email (two columns) -->
+            <div class="form-row">
+
+              <!-- Name field -->
+              <div class="form-group">
+                <label for="name">
+                  Full Name <span class="req" aria-label="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="e.g. Vikram Singh"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <!-- Email field -->
+              <div class="form-group">
+                <label for="email">
+                  Email Address <span class="req" aria-label="required">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+            </div><!-- end .form-row -->
+
+            <!-- Row 2: Phone + Subject (two columns) -->
+            <div class="form-row">
+
+              <!-- Phone field -->
+              <div class="form-group">
+                <label for="phone">
+                  Phone Number <span class="req" aria-label="required">*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 98765 43210"
+                  required
+                  autocomplete="tel"
+                  pattern="[0-9+\-\s]{10,15}"
+                />
+                <small class="field-hint">Enter 10-digit Indian mobile number</small>
+              </div>
+
+              <!-- Subject dropdown -->
+              <div class="form-group">
+                <label for="subject">
+                  Subject <span class="req" aria-label="required">*</span>
+                </label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>-- Select a topic --</option>
+                  <option value="registration">Team Registration</option>
+                  <option value="rules">Rules &amp; Format</option>
+                  <option value="payment">Payment Issue</option>
+                  <option value="dispute">Match Dispute</option>
+                  <option value="sponsorship">Sponsorship</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+            </div><!-- end .form-row -->
+
+            <!-- In-Game ID field (single full-width) -->
+            <div class="form-group">
+              <label for="bgmi-id">BGMI In-Game ID (optional)</label>
+              <input
+                type="text"
+                id="bgmi-id"
+                name="bgmi_id"
+                placeholder="e.g. 5123456789"
+                autocomplete="off"
+              />
+            </div>
+
+            <!-- Message textarea -->
+            <div class="form-group">
+              <label for="message">
+                Message <span class="req" aria-label="required">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here... Include your team name and any relevant details."
+                required
+                rows="6"
+              ></textarea>
+            </div>
+
+            <!-- Agreement checkbox -->
+            <div class="check-group">
+              <input
+                type="checkbox"
+                id="agree"
+                name="agree"
+                required
+              />
+              <label for="agree">
+                I agree to the
+                <a href="#" style="color: var(--neon-orange); text-decoration: none;">Terms &amp; Conditions</a>
+                and confirm that all information provided is accurate.
+              </label>
+            </div>
+
+            <!-- Submit button (dummy — no backend) -->
+            <button type="submit" class="btn-submit">
+              &#9654;&nbsp; Send Message
+            </button>
+
+          </form>
+          <!-- FORM END -->
+
+          <!-- Note below the form -->
+          <p class="form-note">
+            &#9632; We typically respond within 12–24 hours &nbsp;|&nbsp; No spam, ever.
+          </p>
+
+        </div><!-- end .contact-form-wrap -->
+
+      </div><!-- end .contact-wrapper -->
+
+    </section>
+    <!-- END: Contact Main Section -->
+
+
+    <!-- ==========================================
+         FAQ SECTION
+         Common questions with CSS accordion (radio trick)
+         No JavaScript used — pure HTML + CSS
+         ========================================== -->
+    <section class="section-faq" aria-labelledby="faq-heading">
+
+      <!-- Section header -->
+      <div class="section-header">
+        <span class="section-label">&#9670; Quick Answers</span>
+        <h2 id="faq-heading">
+          Frequently Asked <span class="accent">Questions</span>
+        </h2>
+        <div class="section-divider" aria-hidden="true"></div>
+      </div>
+
+      <!-- FAQ accordion list using radio inputs for pure CSS toggle -->
+      <div class="faq-list" role="list">
+
+        <!-- FAQ Item 1 -->
+        <div class="faq-item" role="listitem">
+          <!-- Hidden radio — same name = only one open at a time -->
+          <input type="radio" name="faq" id="faq1" />
+          <label class="faq-question" for="faq1">
+            How do I register my squad for BGMI Pro League?
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </label>
+          <div class="faq-answer" aria-live="polite">
+            <p>
+              Fill out the contact form above with the subject "Team Registration".
+              Include your team name, captain's in-game ID, and all 4 member IDs in the message.
+              We'll send payment details and a confirmation email within 24 hours.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item" role="listitem">
+          <input type="radio" name="faq" id="faq2" />
+          <label class="faq-question" for="faq2">
+            What is the registration fee and payment method?
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </label>
+          <div class="faq-answer" aria-live="polite">
+            <p>
+              The entry fee is ₹200 per team (4 members). We accept payment via UPI,
+              Paytm, PhonePe, and NEFT bank transfer. Payment details will be shared
+              after your registration request is reviewed.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item" role="listitem">
+          <input type="radio" name="faq" id="faq3" />
+          <label class="faq-question" for="faq3">
+            Can I substitute a player after registration?
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </label>
+          <div class="faq-answer" aria-live="polite">
+            <p>
+              Yes, one substitute player is allowed per team. Substitution requests must
+              be submitted to support@bgmiproleague.in at least 48 hours before your
+              first scheduled match. Late substitutions will not be accepted.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item" role="listitem">
+          <input type="radio" name="faq" id="faq4" />
+          <label class="faq-question" for="faq4">
+            How are prizes paid out to winners?
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </label>
+          <div class="faq-answer" aria-live="polite">
+            <p>
+              Prize money is transferred directly to the team captain's bank account
+              or UPI ID within 7 working days of the Grand Finals. A valid government
+              ID (Aadhaar/PAN) is required for payouts above ₹50,000.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item" role="listitem">
+          <input type="radio" name="faq" id="faq5" />
+          <label class="faq-question" for="faq5">
+            What happens if a team disconnects mid-match?
+            <span class="faq-arrow" aria-hidden="true">&#9660;</span>
+          </label>
+          <div class="faq-answer" aria-live="polite">
+            <p>
+              Disconnections due to personal network issues are not grounds for rematch.
+              However, if a server-side issue affects 3 or more teams simultaneously,
+              the match may be replayed at the referee's discretion. All decisions by
+              the Head Referee are final.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- end .faq-list -->
+
+    </section>
+    <!-- END: FAQ Section -->
+
+  </main>
+  <!-- END: Main Content -->
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <p class="brand-name">BGMI PRO LEAGUE</p>
+          <p>India's premier BGMI esports tournament platform.
+             Bringing together the best squads from across the nation
+             to compete for glory and prize money.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Discord Server</a></li>
+            <li><a href="#">YouTube Channel</a></li>
+            <li><a href="#">Telegram Group</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 BGMI Pro League. All rights reserved.</p>
+        <p class="made-with">Made with <span>&#9829;</span> for Indian Gamers</p>
+      </div>
+
+    </div>
+  </footer>
+  <!-- END: Footer -->
+
+</body>
+</html>
